@@ -25,8 +25,7 @@ fun main() {
     // tag::init[]
     foldRight(
         Cons(1, Cons(2, Cons(3, Nil))),
-        Nil as List<Int>,
-        { x, y -> Cons(x, y) }
-    )
+        Nil as List<Int>
+    ) { x, y -> Cons(x, y) }
     // end::init[]
 }
